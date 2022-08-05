@@ -1,6 +1,6 @@
 //7. Write a function in C to count a total number of duplicate elements in an array.
 #include<stdio.h>
-void count_number(int ar,int siz);
+void count_number(int ar[],int siz);
 int main()
 {
 	int arr[100],size,i;
@@ -12,7 +12,7 @@ int main()
 		scanf("%d",&arr[i]);
 	count_number(arr,size);
 }
-void count_number(int ar,int siz)
+void count_number(int ar[],int siz)
 {
 	int i,j,count=0;
 	for(i=0;i<siz;i++)
@@ -24,5 +24,10 @@ void count_number(int ar,int siz)
 				break;
 		}
 	}
-	printf("%d ",count);
+	printf("total number of duplicate element in array ");
+	for(i=0;i<siz;i++);
+	{
+
+		printf("%d ",count);
+		}
 }
